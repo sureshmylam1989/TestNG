@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+   <!--  <classes>
+      <class name="com.testNG.practice2.InnerClass"/>
+      <class name="com.testNG.practice2.OuterClass"/> 
+      This will throw inner class path not found. you need to use packages
+    </classes> -->
+    <packages>
+    	<package name="com.testNG.practice2"></package>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

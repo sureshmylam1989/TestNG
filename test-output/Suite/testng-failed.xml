@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.testNG.parameters.Parameter1">
+        <parameter name="paramName" value="ABCD"/>
+        <parameter name="param" value="method3"/>
+        <parameter name="param2" value="method3_1"/>
+        <methods>
+          <include name="method3"/>
+        </methods>
+      </class> <!-- com.testNG.parameters.Parameter1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

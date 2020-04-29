@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<!-- <listener class-name="com.testNGListners.TestNG_ISuiteListner"></listener>
+		<listener class-name="com.testNGListners.TestNG_ITestListner"></listener>
+		<listener class-name="com.testNGListners.TestNG_IExecutionListner"></listener>
+		<listener class-name="com.testNGListners.TestNG_IReporter"></listener>
+		<listener class-name="com.testNGListners.TestNG_IMethodInterceptor"></listener>
+		<listener class-name="com.testNGListners.TestNG_IInvokedMethodListener"></listener>
+		<listener class-name="com.testNGListners.TestNG_IHookable"></listener> -->
+		<listener class-name="com.testNGListners.ExtentTestNGIReporterListener"></listener>
+	</listeners>	
+	<test name="Test">
+		<classes>
+			<!-- <class name="com.agmednet.rwd.NewTest"/>
+			<class name="com.testNGListners.Tests" />
+			<class name="com.testNGListners.TestNG_IHookable" /> -->		
+			<class name="com.testNGListners.Tests" />				
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<!-- <groups> <run> <include name="G2"></include> </run> </groups> -->
+
+<method-selectors>
+	<method-selector>
+		<!-- <script language="beanshell"> 
+			<![CDATA[return groups.containsKey("G1")&& groups.containsKey("G2")]]>
+		</script>
+		<script language="beanshell"> <![CDATA[groupnames = System.getProperty("groupToRun"); 
+			groups.containsKey(groupnames);]]>
+		</script> -->
+		<script language="beanshell"> 
+			<![CDATA[groupnames = System.getProperty("groupToRun"); if((groupToRun==null)||(groupToRun=="")){ 
+			return true; }else{ StringTokenizer groupsList = new StringTokenizer(groupnames,","); 
+			while(groupsList.hasMoreTokens()){ if(groups.containsKey(groupsList.nextToken())){ 
+			return true; } return false; } } ]]>
+		</script>
+	</method-selector>
+</method-selectors>
+		<!-- <groups>
+			<define name="Module1">
+				<include name="G1"></include>
+				<include name="G2"></include>
+				<include name="G3"></include>
+			</define>
+			<define name="Module2">
+				<include name="G4"></include>
+				<include name="G5"></include>
+				<include name="G6"></include>
+			</define>
+			<run>
+			<include name="Module1"></include>
+			</run>
+		</groups> -->
+
+		<classes>
+			<class name="com.testNG.groups.Groups" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="str1" value="suresh"></parameter>
+  <parameter name="str2" value="Mylam"></parameter>
+    <classes>
+      <class name="com.testNG.Interface.TestNG_OverloadMethod"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

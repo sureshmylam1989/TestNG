@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="optionalParames" value="QWERTY-OPTIONAL VALUE" />
+	<test name="Test">
+		<classes>
+			<class name="com.testNG.parameters.Parameter1">
+				<methods>
+					<include name="method2"></include>
+					<!-- <parameter name="paramName" value="ABCD"></parameter> -->
+
+					<include name="method3"></include>
+					<parameter name="param" value="method3"></parameter>
+					<parameter name="param2" value="1"></parameter>
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
